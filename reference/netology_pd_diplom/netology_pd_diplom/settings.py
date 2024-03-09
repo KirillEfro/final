@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'versatileimagefield',
     'easy_thumbnails',
+    'baton',
+    'django.contrib.admin',
+    # ... (place baton.autodiscover at the very end)
+    'baton.autodiscover',
 ]
 
 MIDDLEWARE = [
