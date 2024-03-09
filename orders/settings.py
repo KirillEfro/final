@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_rest_passwordreset',
     'rest_framework.authtoken',
-    
+    'versatileimagefield',
+    'easy_thumbnails',
+    'drf_spectacular',
     # alluth
     'django.contrib.sites',
     'allauth',
@@ -174,6 +176,7 @@ REST_FRAMEWORK = {
     },
     
     'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 AUTHENTICATION_BACKENDS = [
